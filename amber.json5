@@ -4,14 +4,12 @@
     image: "ghcr.io/pushkov-fedor/bargaining-agent:latest",
     network: {
       endpoints: [
-        { name: "api", port: 8080, protocol: "http" }
-      ]
-    }
+        { name: "endpoint", port: 8080 },
+      ],
+    },
   },
   provides: {
-    api: { kind: "a2a", endpoint: "api" }
+    a2a: { kind: "a2a", endpoint: "endpoint" },
   },
-  exports: {
-    api: "api"
-  }
+  exports: { a2a: "a2a" },
 }
