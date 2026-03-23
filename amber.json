@@ -1,0 +1,17 @@
+{
+  "manifest_version": "0.1.0",
+  "program": {
+    "image": "ghcr.io/pushkov-fedor/bargaining-agent:latest",
+    "network": {
+      "endpoints": [
+        { "name": "endpoint", "port": 8080 }
+      ]
+    }
+  },
+  "provides": {
+    "a2a": { "kind": "a2a", "endpoint": "endpoint" }
+  },
+  "exports": {
+    "a2a": "a2a"
+  }
+}
