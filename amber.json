@@ -9,6 +9,12 @@
       ]
     }
   },
+  "config_schema": {
+    "type": "object",
+    "properties": {},
+    "required": [],
+    "additionalProperties": false
+  },
   "provides": {
     "a2a": { "kind": "a2a", "endpoint": "endpoint" }
   },
