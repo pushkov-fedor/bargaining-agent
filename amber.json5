@@ -9,7 +9,7 @@
     }
   },
   provides: {
-    api: { kind: "http", endpoint: "api" }
+    api: { kind: "a2a", endpoint: "api" }
   },
   exports: {
     api: "api"
