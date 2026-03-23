@@ -2,6 +2,7 @@
   "manifest_version": "0.1.0",
   "program": {
     "image": "ghcr.io/pushkov-fedor/bargaining-agent:latest",
+    "entrypoint": ["python", "purple_agent_server.py"],
     "network": {
       "endpoints": [
         { "name": "endpoint", "port": 8080 }
